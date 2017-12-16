@@ -82,3 +82,15 @@ ng g component code404
 当用户访问一个特定的地址时，将其重定向到一个指定的地址
 {path: '', redirectTo: '/home', pathMatch: 'full'},
  {path: '/home', component: HomeComponent},
+
+-- 子路由
+生成商品的描述组件
+ng g component productDesc
+这是一个牛X的商品
+ng g component sellerInfo
+销售员ID {{sellerId}}
+
+children属性
+
+
+
