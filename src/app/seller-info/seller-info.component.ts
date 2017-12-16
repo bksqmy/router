@@ -17,8 +17,6 @@ export class SellerInfoComponent implements OnInit {
 
   ngOnInit() {
     this.sellerId = this.routeInfo.snapshot.params['id'];
-
-
   }
 
 }

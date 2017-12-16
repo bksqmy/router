@@ -91,6 +91,6 @@ ng g component sellerInfo
 销售员ID {{sellerId}}
 
 children属性
-
+自路由本身是生成插座的父子关系
 
 
