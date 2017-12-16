@@ -60,3 +60,17 @@ const routes: Routes = [
 <a [routerLink]="['/product']">商品详情</a>
 -- routerLink是一个数组，而不是一个字符串
 
+
+-- 在代码中通过router对象进行导航
+在 app.component.ts 添加函数
+  toProductDetails() {
+    this.router.navigate(['/product']);
+  }
+在 app.component.html  添加导航引用
+<input type="button" value="商品详情" (click)="toProductDetails()">
+
+-- 当用户输入一个没有定义的路由
+-- 生成一个组件 code404
+ng g component code404
+
+
