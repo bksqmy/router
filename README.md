@@ -78,3 +78,7 @@ ng g component code404
   {path: 'product', component: ProductComponent},
   {path: '**', component: Code404Component},
 
+-- 重定向路由
+当用户访问一个特定的地址时，将其重定向到一个指定的地址
+{path: '', redirectTo: '/home', pathMatch: 'full'},
+ {path: '/home', component: HomeComponent},
