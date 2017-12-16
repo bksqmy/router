@@ -36,8 +36,6 @@ ActivatedRount  当前激活的路由对象，保存着当前的
 
 
 
-使用Angular Route导航
-
 
 AppRoutingModule
 
@@ -50,10 +48,15 @@ ng g component product
 这里是商品组件
 这里是主页组件
 
--- 添加路由配置
-
-
-
-
-
+-- 添加(路由配置)
+const routes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'product', component: ProductComponent},
+];
+-- RouterOutlet
+在app.component.html 会有一个<router-outlet></router-outlet>，有插座的作用
+-- 寻找匹配的路由组件
+<a [routerLink]="['/']">主页</a>
+<a [routerLink]="['/product']">商品详情</a>
+-- routerLink是一个数组，而不是一个字符串
 
