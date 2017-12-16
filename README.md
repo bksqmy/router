@@ -33,3 +33,27 @@ RouterOutlet 在Html中标记路由内容呈现位置的占位符指令
 Router 负责在运行时执行路由的对象，可以通过调用其navigate()和navigateByUrl()方法来导航到一个指定的路由
 RouterLink 在Html中声明路由导航的指令
 ActivatedRount  当前激活的路由对象，保存着当前的
+
+
+
+使用Angular Route导航
+
+
+AppRoutingModule
+
+
+-- 生成相关组件
+ng g component home
+ng g component product
+
+-- 修改内容
+这里是商品组件
+这里是主页组件
+
+-- 添加路由配置
+
+
+
+
+
+
