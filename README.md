@@ -94,3 +94,12 @@ children属性
 自路由本身是生成插座的父子关系
 
 
+辅助路由
+<router-outlet name="aux></router-outlet>
+
+主插座 对应多个 辅助插座
+
+<router-outlet name="aux"></router-outlet>
+ng g component chat
+
+
