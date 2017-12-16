@@ -72,5 +72,9 @@ const routes: Routes = [
 -- 当用户输入一个没有定义的路由
 -- 生成一个组件 code404
 ng g component code404
-
+-- 当输入不存在插座时，能够跳转到404页面
+注意路由顺序，否则会直接匹配404页面
+ {path: '', component: HomeComponent},
+  {path: 'product', component: ProductComponent},
+  {path: '**', component: Code404Component},
 
